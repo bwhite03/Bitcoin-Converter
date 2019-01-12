@@ -1,0 +1,24 @@
+#navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Lato", sans-serif;
+  padding: 20px 30px;
+  background: #222831;
+  color: white;
+  .logo {
+    align-self: center;
+  }
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    li {
+      display: inline-block;
+      padding: 5px;
+      a {
+        text-decoration: none;
+        color: #eeeeee;
+      }
+    }
+  }
+}
