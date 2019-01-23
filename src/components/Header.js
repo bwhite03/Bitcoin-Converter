@@ -1,21 +1,27 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = props => {
   return (
-    <nav id="navbar">
-      <div className="logo">
-        <h1>BitCoin</h1>
+    <header id="header">
+      <div>
+        <img className="logo" src="img/bitcoin-logo.png" />
       </div>
-      <ul>
-        <li>
-          <Link to="/">Bitcoin</Link>
-        </li>
-        <li>
-          <Link to="/cash">Currency</Link>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="/" activeClassName="is-active" exact="true">
+              Bitcoin
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/cash" activeClassName="is-active">
+              Currency
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 

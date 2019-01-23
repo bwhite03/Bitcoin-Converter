@@ -1,23 +1,29 @@
-#navbar {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+#header {
+  display: flex;
+  justify-content: space-between;
   font-family: "Lato", sans-serif;
-  padding: 20px 30px;
+  padding: 10px 25px;
   background: #222831;
   color: white;
   .logo {
-    align-self: center;
+    width: 50px;
   }
-  ul {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right;
-    li {
+  .is-active {
+    font-weight: bold;
+  }
+  nav {
+    padding: 15px 0;
+    ul {
       display: inline-block;
-      padding: 5px;
-      a {
-        text-decoration: none;
-        color: #eeeeee;
+      vertical-align: middle;
+      text-align: right;
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        a {
+          text-decoration: none;
+          color: #eeeeee;
+        }
       }
     }
   }
