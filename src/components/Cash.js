@@ -65,7 +65,7 @@ class Cash extends Component {
           </form>
           <div className="result">
             <h3>Your Currency is worth</h3>
-            <h2>{this.state.result.toFixed(2)}</h2>
+            <h2>{this.state.result.toFixed(2)} Ƀ</h2>
           </div>
         </div>
       </div>
