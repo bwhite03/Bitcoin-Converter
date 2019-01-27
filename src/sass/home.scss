@@ -77,3 +77,13 @@
     }
   }
 }
+
+@media screen and (max-width: 460px) {
+  #home {
+    .info-container {
+      form {
+        width: 80%;
+      }
+    }
+  }
+}
