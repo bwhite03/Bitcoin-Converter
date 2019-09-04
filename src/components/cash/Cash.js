@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Currency from "./Currency";
+import Currency from "../currency/Currency";
 
 class Cash extends Component {
   constructor() {
@@ -28,9 +28,7 @@ class Cash extends Component {
     e.preventDefault();
     axios
       .get(
-        `https://blockchain.info/tobtc?currency=${this.state.currency}&value=${
-          this.state.amount
-        }`
+        `https://blockchain.info/tobtc?currency=${this.state.currency}&value=${this.state.amount}`
       )
       .then(response => {
         this.setState({
@@ -38,7 +36,7 @@ class Cash extends Component {
         });
       })
       .catch(error => {
-        console.log(error);
+        throw error;
       });
   };
   render() {
